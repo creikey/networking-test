@@ -9,6 +9,8 @@ func _ready():
 		get_tree().quit()
 		return
 	if(OS.get_cmdline_args().size() > 0 and OS.get_cmdline_args()[0] == "--server"):
+		print("Starting server")
 		get_tree().change_scene(server_scene_path)
 	else:
+		print("Starting Client")
 		get_tree().change_scene(client_scene_path)

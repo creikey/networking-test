@@ -4,6 +4,6 @@
 
 [node name="Chooser" type="Node2D" index="0"]
 script = ExtResource( 1 )
-server_scene_path = ""
-client_scene_path = ""
+server_scene_path = "Server/Server.tscn"
+client_scene_path = "Client/Client.tscn"
 
