@@ -20,6 +20,7 @@ func _on_CommandInput_text_entered(new_text):
 		connect_to_server()
 
 func connect_to_server():
+	$UI/Log.append_to_log("Connecting to ip " + server_ip + " on port " + str(server_port))
 	var peer = NetworkedMultiplayerENet.new()
 	peer.create_client(server_ip, server_port)
 	get_tree().set_network_peer(peer)
